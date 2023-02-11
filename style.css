@@ -3,3 +3,64 @@
     padding: 0;
 }
 
+#cris{
+    width: 25rem; 
+    position: absolute;
+    margin-top: 6.5em; 
+    margin-left: 24em; 
+    background-color: rgb(235, 230, 224);
+    padding: 20px; 
+    height: 31em; 
+    text-align: center; 
+    align-items: center; 
+    border: 0px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+#bg{
+    background-color: rgb(218, 206, 191);;
+}
+
+#main{
+    padding-left: 80px;
+}
+
+.botão{
+    background-color: rgb(220, 20, 87);
+    padding: 9px;
+    border: 0;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.botão:hover{
+    background-color: white;
+    padding: 6px;
+    border: 3px solid rgb(220, 20, 87);
+    color: rgb(220, 20, 87);
+}
+
+
+@media screen and (max-width: 767px){
+    #cris{
+        margin-left: 10em;
+        display: block;
+    }
+
+    #bg{
+        background-color: white;
+    }
+
+    .texto{
+        background-color: rgb(218, 206, 191);
+    }
+
+    #linha{
+        height: 600px;
+    }
+
+    #main{
+        padding-left: 0;
+    }
+}
