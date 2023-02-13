@@ -41,6 +41,29 @@
     color: rgb(220, 20, 87);
 }
 
+.insta:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    padding: 4px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.whats:hover{
+    background-color: #34af23;
+    border-radius: 5px;
+    padding: 4px;
+    height: 40px;
+}
+
+.redes{
+    color: rgb(98, 192, 4);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cont:hover{
+    color: rgb(220, 20, 87);
+}
 
 @media screen and (max-width: 767px){
     #cris{
