@@ -45,6 +45,12 @@ h5{
     margin-top: 2em;
 }
 
+#dado{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .info{
     width: 45em;
     margin-top: 5em;
