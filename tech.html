@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="tech.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <title>Tech Dev -  Sempre online</title>
+    </head>
+
+    <body>
+        
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-md-12" style="background-color: rgb(18, 17, 31);">
+
+                    <div id="main" style="margin-top: 100px;">
+
+                        <img src="img/log.png" alt="logo">
+
+                        <div class="text">
+
+                            <p>Programar é</p>
+
+                            <p>
+
+                                <span class="word wisteria">Raciocínio.</span>
+                                <span class="word belize">Desafio.</span>
+                                <span class="word pomegranate">Evolução.</span>
+                                <span class="word green">Constância.</span>
+                                <span class="word mindnigth">Lifestyle.</span>
+
+                            </p>
+
+                        </div>
+
+                        <div id="texto">
+
+                            <p>Somos uma empresa <strong>FICTÍCIA</strong> de desenvolvimento <strong>FRONT-END</strong> criada para um trabalho, é por isso que daqui para frente é só Lorem</p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat ratione eum consectetur maiores omnis qui ipsum perspiciatis expedita tenetur! Ex, rerum? Reiciendis corporis saepe dolores numquam temporibus sed consequatur!</p>
+
+                        </div>                        
+
+                        <div class="dev1">
+
+                            <h4>Keylla Cristina</h4>
+
+                            <img src="img/k.jpeg" alt="keylla" class="dev" height="160px" style="border-radius: 50%;">
+
+
+                            <div class="redes">
+
+                                <a href="#"><img src="img/insta.png" class="insta" style="height: 40px;"></a>
+
+                                <a href="#"><img src="img/git.webp" class="git" height="40px"></a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="d2">
+
+                            <div class="dev3">
+
+                                <h4>Ricardo Souza</h4>
+
+                                <img src="img/r.png" alt="ricardo" class="dev" height="160px" style="border-radius: 50%;">
+
+
+                                <div class="redes">
+
+                                    <a href="#"><img src="img/insta.png" class="insta" style="height: 40px;"></a>
+
+                                    <a href="#"><img src="img/git.webp" class="git" height="40px"></a>
+
+                                </div>
+
+                            </div>
+
+                            <div id="devs">
+                                <div class="waviy">
+                                    <span style="--i:1">Equipe</span>
+                                    <br>
+                                    <span style="--i:2">De</span>
+                                    <br>
+                                    <span style="--i:3">Desenvolvedores</span>
+                                </div>
+                            </div>
+
+                            <div class="dev4">
+
+                                <h4>Paulo Murilo</h4>
+
+                                <img src="img/p.png" alt="paulo" class="dev" height="160px" style="border-radius: 50%;">
+
+
+                                <div class="redes">
+
+                                    <a href="#"><img src="img/insta.png" class="insta" style="height: 40px;"></a>
+
+                                    <a href="#"><img src="img/git.webp" class="git" height="40px"></a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="dev2">
+
+                            <h4>Gisele Faustino</h4>
+
+                            <img src="img/g.png" alt="gisele" class="dev" height="160px" style="border-radius: 50%;">
+
+
+                            <div class="redes">
+
+                                <a href="#"><img src="img/insta.png" class="insta" style="height: 40px;"></a>
+
+                                <a href="#"><img src="img/git.webp" class="git" height="40px"></a>
+
+                            </div>
+
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer>
+
+                <div class="row text-center" style="height: 180px; background-color: rgb(18, 17, 31);">
+
+                    <div class="col-md-12">
+
+                        <img src="img/log.png" alt="logo" height="90px" style="margin-top: 5px;"><br>
+
+                        <strong><p>Copyright 2023 -  Todos os direitos reservados. Desenvolvido por <a href="tech.html" style="color: #bbe22c;">Tech Dev</a>.</p></strong><br>
+                        <p>CNPJ - 51.827.052/0001-21</p>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+        </div>
+
+    </body>
+
+    <script>
+        var words = document.getElementsByClassName('word');
+    var wordArray = [];
+    var currentWord = 0;
+
+    words[currentWord].style.opacity = 1;
+    for (var i = 0; i < words.length; i++) {
+    splitLetters(words[i]);
+    }
+
+    function changeWord() {
+    var cw = wordArray[currentWord];
+    var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+    for (var i = 0; i < cw.length; i++) {
+        animateLetterOut(cw, i);
+    }
+    
+    for (var i = 0; i < nw.length; i++) {
+        nw[i].className = 'letter behind';
+        nw[0].parentElement.style.opacity = 1;
+        animateLetterIn(nw, i);
+    }
+    
+    currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+    }
+
+    function animateLetterOut(cw, i) {
+    setTimeout(function() {
+            cw[i].className = 'letter out';
+    }, i*80);
+    }
+
+    function animateLetterIn(nw, i) {
+    setTimeout(function() {
+            nw[i].className = 'letter in';
+    }, 340+(i*80));
+    }
+
+    function splitLetters(word) {
+    var content = word.innerHTML;
+    word.innerHTML = '';
+    var letters = [];
+    for (var i = 0; i < content.length; i++) {
+        var letter = document.createElement('span');
+        letter.className = 'letter';
+        letter.innerHTML = content.charAt(i);
+        word.appendChild(letter);
+        letters.push(letter);
+    }
+    
+    wordArray.push(letters);
+    }
+
+    changeWord();
+    setInterval(changeWord, 4000);
+    </script>
+
+</html>

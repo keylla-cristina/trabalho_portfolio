@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.text {
+  width: 600px;
+  left: 55%;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  font-size: 50px;
+  margin-left: 370px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  color: white;
+}
+
+.word {
+  position: absolute;
+  width: 300px;
+  opacity: 0;
+}
+
+.letter {
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #0AA7FF;
+}
+
+#main{
+    text-align: center;
+}
+
+#texto{
+    width: 950px;
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 300px;
+}
+
+.dev1, .dev2, .dev3, .dev4{
+    color: white;
+}
+
+.dev1{
+    margin-top: 100px;
+}
+
+.dev2{
+    margin-top: 50px;
+}
+
+.d2{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 280px;
+    width: 1000px;
+    align-items: center;    
+}
+
+#dev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.redes{
+    margin-top: 5px;
+}
+
+.insta{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    padding: 4px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.git{
+    background-color: white;
+    border-radius: 50%;
+    height: 40px;
+    padding: 4px;
+}
+
+.waviy {
+    position: relative;
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Righteous';
+    color: #bbe22c;
+    text-transform: uppercase;
+    animation: flip 3s infinite;
+    animation-delay: calc(.4s * var(--i))
+}
+
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+@media screen and (max-width: 767px){
+    .text{
+        margin-left: -20px;
+    }
+
+    #texto{
+        width: 400px;
+        margin-left: 180px;
+    }
+
+    #devs{
+        margin-top: -59em;
+        margin-left: -50em;
+    }
+
+    .dev1{
+        margin-top: 15em;
+    }
+
+}
