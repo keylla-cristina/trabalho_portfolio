@@ -89,7 +89,7 @@ h5{
     margin-top: 6em;
 }
 
-@media screen and (max-width: 574px){
+@media screen and (max-width: 480px){
     #body{
         padding-left: 5em;
         padding-right: 5em;
@@ -100,4 +100,15 @@ h5{
         display: inline;
     }
 
+    #titulo{
+        margin-left: 4em;
+    }
+
+    .cartao2{
+        height: 27em;
+    }
+
+    #let{
+        width: 95px;
+    }
 }

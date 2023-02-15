@@ -156,15 +156,19 @@ p {
   100% {stroke-dashoffset: -35%;}
 }
 
-@media screen and (max-width: 574px){
+@media screen and (max-width: 480px){
+    #logo{
+      height: 16em;
+    }
+
     .text{
-        margin-left: -3em;
+        margin-left: -4.1em;
         font-size: xx-large;
     }
 
     #texto{
         width: 400px;
-        margin-left: 5em;
+        margin-left: 2em;
     }
 
     #devs{
