@@ -89,7 +89,7 @@ h5{
     margin-top: 6em;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 574px){
     #body{
         padding-left: 5em;
         padding-right: 5em;
@@ -97,5 +97,7 @@ h5{
     
     .lista{
         margin-top: 4em;
+        display: inline;
     }
+
 }
