@@ -51,23 +51,23 @@ p {
 }
 
 .wisteria {
-  color: #8e44ad;
+  color: #b20bfa;
 }
 
 .belize {
-  color: #2980b9;
+  color: #269cec;
 }
 
 .pomegranate {
-  color: #c0392b;
+  color: #f82a14;
 }
 
 .green {
-  color: #16a085;
+  color: #16dbb4;
 }
 
 .midnight {
-  color: #0AA7FF;
+  color: #ff9900;
 }
 
 #main{
@@ -93,12 +93,17 @@ p {
     margin-top: 50px;
 }
 
-.d2{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 280px;
-    width: 1000px;
-    align-items: center;    
+.dev3{
+  margin-left: -45em;
+}
+
+#devs{
+    margin-top: -12em;
+}
+
+.dev4{
+  margin-top: -14.5em;
+  margin-left: 45em;
 }
 
 #dev{
@@ -162,12 +167,22 @@ p {
     }
 
     #devs{
-        margin-top: -59em;
-        margin-left: -50em;
+      margin-top: -45em;
+      margin-left: 1em;
     }
 
     .dev1{
-        margin-top: 15em;
+      margin-top: 15.5em;
+    }
+
+    .dev3{
+      margin-left: 0;
+      margin-top: 2.5em;
+    }
+
+    .dev4{
+      margin-left: 0;
+      margin-top: 36em;
     }
 
 }
